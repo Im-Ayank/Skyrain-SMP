@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyrain SMP - Premium Minecraft Server</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-blocks">
+            <div class="block block-1"></div>
+            <div class="block block-2"></div>
+            <div class="block block-3"></div>
+            <div class="block block-4"></div>
+            <div class="block block-5"></div>
+            <div class="block block-6"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#" data-aos="fade-right">
+                <i class="fas fa-cube me-2"></i>
+                <span class="brand-text">Skyrain SMP</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ranks">Ranks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kits">Kits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#server-info">Server Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                        <h1 class="hero-title">
+                            Welcome to <span class="text-gradient">Skyrain SMP</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            The Ultimate Minecraft Experience Awaits You
+                        </p>
+                        <p class="hero-description" data-aos="fade-up" data-aos-delay="400">
+                            Join thousands of players in our premium Minecraft server featuring custom plugins, 
+                            epic adventures, and endless possibilities. Build, survive, and conquer!
+                        </p>
+                        
+                        <div class="server-ip-box" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="ip-label">Server IP:</div>
+                            <div class="ip-address" id="serverIP">play.skyrainmc.fun</div>
+                            <button class="btn-copy" onclick="copyIP()">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+                            <a href="#ranks" class="btn btn-primary btn-glow me-3">
+                                <i class="fas fa-crown me-2"></i>Buy Ranks
+                            </a>
+                            <a href="#about" class="btn btn-outline-light">
+                                <i class="fas fa-info-circle me-2"></i>Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="hero-image" data-aos="fade-left" data-aos-delay="400">
+                        <img src="https://cdn.modrinth.com/data/cached_images/f563e69bc655c58937afed34c3409cbfb526565b.jpeg" 
+                             alt="Minecraft Server" class="img-fluid floating-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">About Skyrain SMP</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Discover what makes our server legendary
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Active Community</h4>
+                        <p>Join over 1,000 active players in our thriving community with regular events and competitions.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Custom Plugins</h4>
+                        <p>Experience unique gameplay with our custom-developed plugins and exclusive game modes.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>24/7 Protection</h4>
+                        <p>Advanced anti-grief protection and dedicated staff ensure a safe and fair gaming environment.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>High Performance</h4>
+                        <p>Lag-free gaming experience with our premium dedicated servers and optimized performance.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="feature-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Competitions</h4>
+                        <p>Regular tournaments, building contests, and PvP competitions with amazing prizes.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Multiple Worlds</h4>
+                        <p>Explore various themed worlds including Survival, Creative, Skyblock, and custom adventure maps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ranks Section -->
+    <section id="ranks" class="ranks-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Premium Ranks</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Unlock exclusive perks and stand out from the crowd
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="rank-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="rank-header bronze">
+                            <i class="fas fa-medal"></i>
+                            <h4>Bronze</h4>
+                            <div class="rank-price">$4.99</div>
+                        </div>
+                        <div class="rank-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Colored Name</li>
+                                <li><i class="fas fa-check"></i> 2 Homes</li>
+                                <li><i class="fas fa-check"></i> Kit Bronze</li>
+                                <li><i class="fas fa-check"></i> Priority Support</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-rank bronze-btn" onclick="purchaseRank('bronze')">
+                            Purchase Bronze
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="rank-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="rank-header silver">
+                            <i class="fas fa-medal"></i>
+                            <h4>Silver</h4>
+                            <div class="rank-price">$9.99</div>
+                        </div>
+                        <div class="rank-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> All Bronze Perks</li>
+                                <li><i class="fas fa-check"></i> 5 Homes</li>
+                                <li><i class="fas fa-check"></i> Kit Silver</li>
+                                <li><i class="fas fa-check"></i> Fly in Lobby</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-rank silver-btn" onclick="purchaseRank('silver')">
+                            Purchase Silver
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="rank-card popular" data-aos="flip-left" data-aos-delay="300">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="rank-header gold">
+                            <i class="fas fa-crown"></i>
+                            <h4>Gold</h4>
+                            <div class="rank-price">$19.99</div>
+                        </div>
+                        <div class="rank-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> All Silver Perks</li>
+                                <li><i class="fas fa-check"></i> 10 Homes</li>
+                                <li><i class="fas fa-check"></i> Kit Gold</li>
+                                <li><i class="fas fa-check"></i> Particle Effects</li>
+                                <li><i class="fas fa-check"></i> Pet Access</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-rank gold-btn" onclick="purchaseRank('gold')">
+                            Purchase Gold
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="rank-card" data-aos="flip-left" data-aos-delay="400">
+                        <div class="rank-header diamond">
+                            <i class="fas fa-gem"></i>
+                            <h4>Diamond</h4>
+                            <div class="rank-price">$39.99</div>
+                        </div>
+                        <div class="rank-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> All Gold Perks</li>
+                                <li><i class="fas fa-check"></i> Unlimited Homes</li>
+                                <li><i class="fas fa-check"></i> Kit Diamond</li>
+                                <li><i class="fas fa-check"></i> Custom Commands</li>
+                                <li><i class="fas fa-check"></i> VIP Chat</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-rank diamond-btn" onclick="purchaseRank('diamond')">
+                            Purchase Diamond
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kits Section -->
+    <section id="kits" class="kits-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Starter Kits</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Get a head start with our premium starter kits
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="kit-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="kit-image">
+                            <img src="/placeholder.svg?height=200&width=300" 
+                                 alt="Warrior Kit" class="img-fluid">
+                        </div>
+                        <div class="kit-content">
+                            <h4>Warrior Kit</h4>
+                            <p>Full iron armor, enchanted sword, and essential survival items to dominate the battlefield.</p>
+                            <div class="kit-price">$2.99</div>
+                            <button class="btn btn-kit" onclick="purchaseKit('warrior')">
+                                <i class="fas fa-sword me-2"></i>Purchase Kit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="kit-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="kit-image">
+                            <img src="/placeholder.svg?height=200&width=300" 
+                                 alt="Builder Kit" class="img-fluid">
+                        </div>
+                        <div class="kit-content">
+                            <h4>Builder Kit</h4>
+                            <p>Premium building blocks, tools, and decorative items for your construction projects.</p>
+                            <div class="kit-price">$3.99</div>
+                            <button class="btn btn-kit" onclick="purchaseKit('builder')">
+                                <i class="fas fa-hammer me-2"></i>Purchase Kit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="kit-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="kit-image">
+                            <img src="/placeholder.svg?height=200&width=300" 
+                                 alt="Miner Kit" class="img-fluid">
+                        </div>
+                        <div class="kit-content">
+                            <h4>Miner Kit</h4>
+                            <p>Enchanted pickaxes, torches, and mining essentials to uncover rare treasures.</p>
+                            <div class="kit-price">$2.49</div>
+                            <button class="btn btn-kit" onclick="purchaseKit('miner')">
+                                <i class="fas fa-pickaxe me-2"></i>Purchase Kit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Server Info Section -->
+    <section id="server-info" class="server-info-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Server Information</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Everything you need to know about our server
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="info-card" data-aos="fade-right">
+                        <h4><i class="fas fa-server me-2"></i>Server Details</h4>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Server IP:</span>
+                                <span class="info-value">play.skyrainmc.fun</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Version:</span>
+                                <span class="info-value">1.20.x - 1.21.x</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Players Online:</span>
+                                <span class="info-value" id="playersOnline">Loading...</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Max Players:</span>
+                                <span class="info-value">1000</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Uptime:</span>
+                                <span class="info-value">99.9%</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Location:</span>
+                                <span class="info-value">India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="info-card" data-aos="fade-left">
+                        <h4><i class="fas fa-gamepad me-2"></i>Game Modes</h4>
+                        <div class="gamemode-list">
+                            <div class="gamemode-item">
+                                <i class="fas fa-mountain"></i>
+                                <div>
+                                    <h5>Survival</h5>
+                                    <p>Classic survival experience with custom features</p>
+                                </div>
+                            </div>
+                            <div class="gamemode-item">
+                                <i class="fas fa-palette"></i>
+                                <div>
+                                    <h5>Creative</h5>
+                                    <p>Unlimited resources for your building projects</p>
+                                </div>
+                            </div>
+                            <div class="gamemode-item">
+                                <i class="fas fa-cloud"></i>
+                                <div>
+                                    <h5>Skyblock</h5>
+                                    <p>Start with nothing and build your island empire</p>
+                                </div>
+                            </div>
+                            <div class="gamemode-item">
+                                <i class="fas fa-fist-raised"></i>
+                                <div>
+                                    <h5>PvP Arena</h5>
+                                    <p>Battle other players in epic combat arenas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+                    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Need help or have questions? We're here for you!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="contact-icon">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <h4>Discord</h4>
+                        <p>Join our community server for real-time support and chat with other players.</p>
+                        <a href="#" class="btn btn-outline-primary">Join Discord</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Support</h4>
+                        <p>Send us an email for detailed support and account-related inquiries.</p>
+                        <a href="mailto:support@skyrainmc.fun" class="btn btn-outline-primary">Send Email</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="contact-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <h4>Support Tickets</h4>
+                        <p>Create a support ticket for technical issues and account problems.</p>
+                        <a href="#" class="btn btn-outline-primary">Create Ticket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="footer-brand">
+                        <i class="fas fa-cube me-2"></i>
+                        <span>CraftLegends</span>
+                    </div>
+                    <p class="footer-text">© 2025 Skyrain. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
