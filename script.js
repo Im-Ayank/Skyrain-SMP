@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cursor.style.display = "none"
   })
 
-  console.log("🎮 CraftLegends website loaded successfully!")
+  console.log("🎮 Skyrain website loaded successfully!")
   console.log("🚀 All animations and interactions are ready!")
 })
 
